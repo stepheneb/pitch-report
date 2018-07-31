@@ -105,3 +105,7 @@ CMU Nyquist xlisp language for sound synthesis and music composition
 - [CMU Nyquist Music Programming home page](https://www.cs.cmu.edu/~music/music.software.html)
 - [CMU Nyquist html documentation](http://www.cs.cmu.edu/~rbd/doc/nyquist/index.html)
 
+YIN
+
+- [YIN, a fundamental frequency estimator for speech and music](http://audition.ens.fr/adc/pdf/2002_JASA_YIN.pdf)
+- [YIN Pitch detection Algortithm (how do I improve results)](https://dsp.stackexchange.com/questions/17493/yin-pitch-detection-algortithm-how-do-i-improve-my-results)
