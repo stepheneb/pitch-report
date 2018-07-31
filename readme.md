@@ -14,6 +14,8 @@ Pitch Report is copyright by Stephen Bannasch 2018 and is Released under GPL v2.
 
 Pitch Report is derived from code in the Audacity Pitch Detect plugin written and copyrighted by Steve Daulton (www.easyspacepro.com) and released under GPL v2.
 
+### Setup
+
 To setup for use with Audacity on macos:
 
 1. Clone repository.
@@ -24,6 +26,8 @@ $ cd ~/Library/Application\ Support/audacity/Plug-Ins
 $ ln -s ~/path/to/repository/pitch-report.ny pitch-report.ny
 ```
 3. Open Audacity and select menu item: "Analyze:Add / Remove Plug-ins..." and enable plugin Pitch Report.
+
+### Useage
 
 Using Pitch Report plugin.
 
@@ -81,3 +85,23 @@ time              frequency         confidence        RMS
 1.891             366.680           0.970             0.030
 1.954             362.281           0.980             0.029
 ```
+
+### References
+
+Audacity and Nyquist
+
+- [Audacity and Nyquist](http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/nyquist.htm)
+- [Nyquist Reference Manual](http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/manual/home.html)
+- [Nyquist Examples and Tutorials](http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/examples/examples.htm)
+
+Nyquist Plug-ins in Audacity
+
+- [Audacity Nyquist Analyze Plug-ins](https://wiki.audacityteam.org/wiki/Nyquist_Analyze_Plug-ins)
+- [Audacity Nyquist Plug-in Programming and Development Forum](https://forum.audacityteam.org/viewforum.php?f=39)
+- [Audacity Nyquist Plug-ins Reference](https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_Reference)
+
+CMU Nyquist xlisp language for sound synthesis and music composition
+
+- [CMU Nyquist Music Programming home page](https://www.cs.cmu.edu/~music/music.software.html)
+- [CMU Nyquist html documentation](http://www.cs.cmu.edu/~rbd/doc/nyquist/index.html)
+
