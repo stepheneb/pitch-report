@@ -119,9 +119,10 @@
       (setf sum (+ sum (aref rms-array i))))))
 
 (defun print-project-header ()
-  (format t "project\t~a~%date\t~a~%sample-time\t~a~%sample-step-time\t~a~%sample-stop-time\t~a~%tracks\t~a~%~%"
+  (format t "project\t~a~%date\t~a~%time\t~a~%sample-time\t~a~%sample-step-time\t~a~%sample-stop-time\t~a~%tracks\t~a~%~%"
     (get '*project* 'name )
     (get '*system-time* 'ISO-DATE)
+    (get '*system-time* 'TIME)
     sample-time
     sample-step-time
     sample-stop-time
