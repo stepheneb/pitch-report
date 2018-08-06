@@ -19,6 +19,8 @@
 ;control report-type "Report Type" choice "Full" "Summary" 0
 
 ;; Initializations
+(setq schema "1.0")
+
 (setq time 0.0)
 
 (setq sample-length (round (* sample-time *sound-srate*)))
@@ -119,10 +121,10 @@
       (setf sum (+ sum (aref rms-array i))))))
 
 (defun print-project-header ()
-  (format t "project\t~a~%date\t~a~%time\t~a~%sample-time\t~a~%sample-step-time\t~a~%sample-stop-time\t~a~%tracks\t~a~%~%"
+  (format t "name\t~a~%schema\t~a~%datetime\t~a~%sample_time\t~a~%sample_step_time\t~a~%sample_stop_time\t~a~%tracks\t~a~%"
     (get '*project* 'name )
-    (get '*system-time* 'ISO-DATE)
-    (get '*system-time* 'TIME)
+    schema
+    (strcat(get '*system-time* 'ISO-DATE) " " (get '*system-time* 'TIME))
     sample-time
     sample-step-time
     sample-stop-time
@@ -189,14 +191,16 @@
       (setq sample-index (+ sample-index sample-step))
       (setq time (/ sample-index *sound-srate*)))
     (setf results (reverse results))
-    (format t "track\t~a~%number\t~a~%average freq\t~a~%variance\t~a~%stdev\t~a~%~a\t~a\t~a\t~a~%"
+    (format t "name\t~a~%number\t~a~%average_freq\t~a~%variance\t~a~%stdev\t~a~%samples\t~a~%~a\t~a\t~a\t~a~%"
       (get '*track* 'name )
       track-index
       (mean (get-column results 1))
       (variance (get-column results 1))
       (stdev (get-column results 1))
-      "time" "frequency" "confidence" "RMS")
+      (length results)
+      "time" "frequency" "confidence" "rms")
     (print-results results)
-    (format t "~%~%~%~%~%~%~%~%~%~%")))
+    ; (format t "~%")
+    ))
 
 (generate-frequency-table)

@@ -35,7 +35,7 @@ Using Pitch Report plugin.
 2. Click the "Debug" button.
 
 A tab-delimited report similar to the following is generated. Multiple tracks can be selected to generate
-one report with data from multiple trcks.
+one report with data from multiple tracks.
 
 ```
 project           Daddario-EJ15-extra-light-650mm-9070g
