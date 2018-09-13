@@ -27,7 +27,7 @@ $ ln -s ~/path/to/repository/pitch-report.ny pitch-report.ny
 ```
 3. Open Audacity and select menu item: "Analyze:Add / Remove Plug-ins..." and enable plugin Pitch Report.
 
-### Useage
+### Usage
 
 Using Pitch Report plugin.
 
